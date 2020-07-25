@@ -1,0 +1,27 @@
+{
+	"name": "Chrome Extensions Shortcut",
+    "description" : "Custom extension",
+    "version": "1.0",
+    "manifest_version": 2,
+    "browser_action": {
+      "default_popup": "resources/interface/gui.html",
+	  "default_icon": {
+        "16": "resources/icons/16.png",
+        "32": "resources/icons/32.png",
+        "64": "resources/icons/64.png",
+        "128": "resources/icons/128.png"
+      }
+    },
+    "commands": {
+      "_execute_browser_action": {
+        "suggested_key": {
+				"default": "Ctrl+Q",
+				"windows": "Ctrl+Q",
+				"mac": "Command+Q",
+				"linux": "Ctrl+Q"
+        },
+        "description": "Opens gui.html"
+      }
+    },
+	"permissions": ["tabs", "management", "browsingData"]
+}
